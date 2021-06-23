@@ -1,11 +1,15 @@
 @Ishaan Koratkar, June 2021
 
-.text
+@ TODO Basic Version
+@ - Take text from user
+@ - Append text to file
+@ - Save new file
+@ - End program
 
 .global _start
 
 _start:
-  MOV R0, #65
-  MOV R7, #1
 
-SWI 0
+_quit:
+  mov r7, #1
+  swi 0
